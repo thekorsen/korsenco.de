@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads - korsenco.de</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      background-color: #0a0a0a;
+      color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .back {
+      display: inline-block;
+      color: #555;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+      transition: color 0.2s;
+    }
+
+    .back:hover {
+      color: #e0e0e0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #555;
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+    }
+
+    .file-list {
+      list-style: none;
+    }
+
+    .file-item {
+      border: 1px solid #1a1a1a;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      transition: border-color 0.2s;
+    }
+
+    .file-item:hover {
+      border-color: #333;
+    }
+
+    .file-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      text-decoration: none;
+      color: #e0e0e0;
+    }
+
+    .file-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background-color: #14532d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #4ade80;
+      letter-spacing: 0.03em;
+    }
+
+    .file-details {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .file-name {
+      font-size: 0.95rem;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .file-meta {
+      font-size: 0.8rem;
+      color: #555;
+      margin-top: 0.2rem;
+    }
+
+    .download-arrow {
+      flex-shrink: 0;
+      color: #555;
+      transition: color 0.2s;
+    }
+
+    .file-item:hover .download-arrow {
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back">&larr; korsenco.de</a>
+    <h1>Downloads</h1>
+    <p class="subtitle">Files available for download.</p>
+    <ul class="file-list">
+      <li class="file-item">
+        <a href="TLD_Cheapest_Registrars.xlsx" class="file-link" download>
+          <div class="file-icon">XLSX</div>
+          <div class="file-details">
+            <div class="file-name">TLD_Cheapest_Registrars.xlsx</div>
+            <div class="file-meta">Spreadsheet &middot; 40 KB</div>
+          </div>
+          <svg class="download-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
